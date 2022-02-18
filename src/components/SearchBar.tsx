@@ -12,6 +12,7 @@ export const SearchBar = () => {
 };
 
 const ContainerSearchBar = styled.div`
+  transition: ${(props) => props.theme.transition};
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -22,6 +23,7 @@ const ContainerSearchBar = styled.div`
   padding: 9.5px 10px 9.5px 32px;
 
   button {
+    transition: ${(props) => props.theme.transition};
     background: ${(props) => props.theme.colors.primary};
     border: none;
     border-radius: 10px;
@@ -35,9 +37,12 @@ const ContainerSearchBar = styled.div`
   }
 
   svg {
+    transition: ${(props) => props.theme.transition};
     fill: ${(props) => props.theme.colors.primary};
+    margin-right: 15px;
   }
   input {
+    transition: ${(props) => props.theme.transition};
     width: 75%;
     border: none;
     height: 100%;
@@ -45,6 +50,7 @@ const ContainerSearchBar = styled.div`
     color: ${(props) => props.theme.colors.text};
     font-size: 18px;
     ::placeholder {
+      transition: ${(props) => props.theme.transition};
       color: ${(props) => props.theme.colors.text};
     }
   }

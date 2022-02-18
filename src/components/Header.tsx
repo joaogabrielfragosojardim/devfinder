@@ -21,12 +21,12 @@ export const Header = ({ toggleTheme }: IProps) => {
       <button onClick={toggleIcons}>
         {toggle ? (
           <>
-            <h4>ligth</h4>
+            <h4>LIGHT</h4>
             <Sun />
           </>
         ) : (
           <>
-            <h4>dark</h4>
+            <h4>DARK</h4>
             <Moon />
           </>
         )}
@@ -68,5 +68,6 @@ const ContainerHeader = styled.div`
   h4 {
     margin-right: 16px;
     font-size: 13px;
+    letter-spacing: 3px;
   }
 `;

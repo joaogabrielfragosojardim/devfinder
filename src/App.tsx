@@ -4,6 +4,7 @@ import { Home } from "./pages/home";
 import GlobalStyle from "./styles/global";
 import { dark } from "./styles/theme/dark";
 import { light } from "./styles/theme/light";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 function App() {
   const [theme, setTheme] = useState(light);
@@ -11,11 +12,15 @@ function App() {
     setTheme(theme.title === "light" ? dark : light);
   };
 
+  const queryClient = new QueryClient();
+
   return (
-    <ThemeProvider theme={theme}>
-      <Home toggleTheme={toggleTheme} />
-      <GlobalStyle />
-    </ThemeProvider>
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <Home toggleTheme={toggleTheme} />
+        <GlobalStyle />
+      </ThemeProvider>
+    </QueryClientProvider>
   );
 }
 

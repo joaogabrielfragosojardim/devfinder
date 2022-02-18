@@ -12,5 +12,6 @@ export default createGlobalStyle`
 body{
     background: ${(props) => props.theme.colors.background};
     transition: ${(props) => props.theme.transition};
+    padding: 24px;
 }
 `;

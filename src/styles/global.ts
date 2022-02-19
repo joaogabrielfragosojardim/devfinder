@@ -14,4 +14,20 @@ body{
     transition: ${(props) => props.theme.transition};
     padding: 24px;
 }
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 13px;
+}
 `;

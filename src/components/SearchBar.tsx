@@ -33,6 +33,7 @@ const ContainerSearchBar = styled.div`
     height: 100%;
     &:hover {
       cursor: pointer;
+      filter: brightness(1.4);
     }
   }
 

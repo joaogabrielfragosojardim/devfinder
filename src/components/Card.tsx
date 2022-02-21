@@ -109,7 +109,8 @@ const ContainerCard = styled.div`
 
 const ContainerProfileImage = styled.div`
   grid-area: profileImg;
-
+  width: 100%;
+  margin-right: 30px;
   img {
     width: 117px;
     border-radius: 50%;

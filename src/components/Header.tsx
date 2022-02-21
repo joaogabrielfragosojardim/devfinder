@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import { Moon } from "../assets/Moon";
 import { Sun } from "../assets/Sun";
 import styled, { DefaultTheme } from "styled-components";
@@ -10,10 +8,7 @@ interface IProps {
 }
 
 export const Header = ({ toggleTheme, theme }: IProps) => {
-  const [toggle, setToggle] = useState(false);
-
   const toggleIcons = () => {
-    setToggle(!toggle);
     toggleTheme();
     localStorage.setItem("themePresent", JSON.stringify(theme));
   };
@@ -21,7 +16,7 @@ export const Header = ({ toggleTheme, theme }: IProps) => {
     <ContainerHeader>
       <h1>devfinder</h1>
       <button onClick={toggleIcons}>
-        {toggle ? (
+        {theme.title === "light" ? (
           <>
             <h4>LIGHT</h4>
             <Sun />

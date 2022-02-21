@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { DefaultTheme } from "styled-components";
 import { Header } from "../components/Header";
 import { SearchBar } from "../components/SearchBar";
 import { useQuery } from "react-query";
@@ -10,6 +10,7 @@ import { Modal } from "../components/Modal";
 
 interface IProps {
   toggleTheme(): void;
+  theme: DefaultTheme
 }
 
 export interface IDataGitHub {
@@ -28,7 +29,7 @@ export interface IDataGitHub {
   websiteLink?: string;
 }
 
-export const Home = ({ toggleTheme }: IProps) => {
+export const Home = ({ toggleTheme, theme }: IProps) => {
   const [dataUserGitHub, setDataUserGitHub] = useState<IDataGitHub>({});
 
   const { isLoading } = useQuery("gitHubUser", () => getGitHubUser("octocat"), {
@@ -45,7 +46,7 @@ export const Home = ({ toggleTheme }: IProps) => {
   return (
     <Container>
       <Content>
-        <Header toggleTheme={toggleTheme}></Header>
+        <Header toggleTheme={toggleTheme} theme={theme}></Header>
         <SearchBar setDataUserGitHub={setDataUserGitHub} />
         <Card dataUserGitHub={dataUserGitHub} />
       </Content>

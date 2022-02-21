@@ -7,7 +7,10 @@ import { light } from "./styles/theme/light";
 import { QueryClient, QueryClientProvider } from "react-query";
 
 function App() {
-  const [theme, setTheme] = useState(light);
+  const themePresent = localStorage.getItem("themePresent");
+  const [theme, setTheme] = useState(
+    themePresent ? JSON.parse(themePresent) : dark
+  );
   const toggleTheme = () => {
     setTheme(theme.title === "light" ? dark : light);
   };
@@ -17,7 +20,10 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
-        <Home toggleTheme={toggleTheme} />
+        <Home
+          toggleTheme={toggleTheme}
+          theme={theme.title === "light" ? dark : light}
+        />
         <GlobalStyle />
       </ThemeProvider>
     </QueryClientProvider>

@@ -2,18 +2,20 @@ import { useState } from "react";
 
 import { Moon } from "../assets/Moon";
 import { Sun } from "../assets/Sun";
-import styled from "styled-components";
+import styled, { DefaultTheme } from "styled-components";
 
 interface IProps {
   toggleTheme(): void;
+  theme: DefaultTheme;
 }
 
-export const Header = ({ toggleTheme }: IProps) => {
+export const Header = ({ toggleTheme, theme }: IProps) => {
   const [toggle, setToggle] = useState(false);
 
   const toggleIcons = () => {
     setToggle(!toggle);
     toggleTheme();
+    localStorage.setItem("themePresent", JSON.stringify(theme));
   };
   return (
     <ContainerHeader>

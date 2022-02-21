@@ -9,6 +9,8 @@ export const dark = {
     background: "#141D2F",
     card: "#1E2A47",
     white: "#FFFFFF",
+    danger: " #F74646",
   },
-  transition: "1s",
+  shadow: "none",
+  transition: "0.5s",
 };

@@ -12,7 +12,9 @@ declare module "styled-components" {
       background: string;
       card: string;
       white: string;
+      danger: string;
     };
+    shadow: string;
     transition: string;
   }
 }

@@ -41,33 +41,34 @@ const ContainerHeader = styled.div`
   align-items: center;
 
   h1 {
-    transition: ${(props) => props.theme.transition};
     color: ${(props) => props.theme.colors.highlightedText};
   }
   button {
-    transition: ${(props) => props.theme.transition};
     display: flex;
     color: ${(props) => props.theme.colors.secondary};
     background: transparent;
     border: none;
 
     svg {
-      transition: ${(props) => props.theme.transition};
       fill: ${(props) => props.theme.colors.secondary};
     }
 
+    h4 {
+      margin-right: 16px;
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: ${(props) => props.theme.colors.secondary};
+    }
+
     &:hover {
-      color: ${(props) => props.theme.colors.highlightedText};
       cursor: pointer;
       svg {
         fill: ${(props) => props.theme.colors.highlightedText};
       }
-    }
-  }
 
-  h4 {
-    margin-right: 16px;
-    font-size: 13px;
-    letter-spacing: 3px;
+      h4 {
+        color: ${(props) => props.theme.colors.highlightedText};
+      }
+    }
   }
 `;

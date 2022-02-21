@@ -9,6 +9,8 @@ export const light = {
     background: "#F6F8FF",
     card: "#FEFEFE",
     white: "#FFFFFF",
+    danger: " #F74646",
   },
-  transition: "1s",
+  shadow: "0px 16px 30px -10px rgba(70, 96, 187, 0.198567)",
+  transition: "0.5s",
 };

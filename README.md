@@ -5,7 +5,10 @@
 <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/joaogabrielfragosojardim/devfinder">
 <div/>
 <br/>
-<img src="https://github.com/joaogabrielfragosojardim/simulador-investimentos/blob/master/src/assets/thumbnail.jpeg" alt="thumbnail">
+<img src="https://github.com/joaogabrielfragosojardim/devfinder/blob/master/src/assets/darkTheme.png" alt="thumbnail">
+<br/>
+<br/>
+<img src="https://github.com/joaogabrielfragosojardim/devfinder/blob/master/src/assets/lightTheme.png" alt="thumbnail">
 
 Aplicativo capaz de buscar usuários pela sua tag no github, a aplicação é capaz de exibir algumas informações a respeito de desenolvedor e trocar entre temas dark e light
 

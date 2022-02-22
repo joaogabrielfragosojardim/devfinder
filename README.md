@@ -35,7 +35,6 @@ primeiramente clone o projeto
 ```
 git clone https://github.com/joaogabrielfragosojardim/devfinder.git
 ```
-```
 instale as dependências, dentro da pasta raiz do front-end rode:
 ```
 npm i || yarn

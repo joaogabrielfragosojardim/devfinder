@@ -3,7 +3,7 @@ import { Location } from "../assets/Location";
 import { Twitter } from "../assets/Twitter";
 import { Link } from "../assets/Link";
 import { Company } from "../assets/Company";
-import { IDataGitHub } from "../pages/home";
+import { IDataGitHub } from "../pages/Home";
 
 interface IBIO {
   bio?: string;

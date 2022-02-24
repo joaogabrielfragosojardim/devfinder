@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { useMutation } from "react-query";
 import styled from "styled-components";
 import { Search } from "../assets/Search";
-import { IDataGitHub } from "../pages/home";
+import { IDataGitHub } from "../pages/Home";
 import { getGitHubUser } from "../services/gitHubUser";
 import { formatedDataAPI } from "../utils/formatedDataAPI";
 
